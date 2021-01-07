@@ -13,7 +13,7 @@ dependencies:
   - fastscapelib-f2py=2.8.2
   - ipyfastscape
   - jupyter
-  - jupyterlab
+  - jupyterlab=2.2.9
   - notebook
   - ipykernel
   - matplotlib-base
