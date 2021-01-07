@@ -1,4 +1,4 @@
-name: fastscape-demo
+name: s2s-future-dragonstone
 channels:
   - conda-forge
 dependencies:

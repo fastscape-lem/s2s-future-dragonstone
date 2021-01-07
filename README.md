@@ -1,5 +1,5 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/fastscape-lem/fastscape-demo/master?urlpath=lab)
-[![Test notebooks](https://github.com/fastscape-lem/fastscape-demo/workflows/Test%20notebooks/badge.svg)](https://github.com/fastscape-lem/fastscape-demo/actions)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/fastscape-lem/s2s-future-dragonstone/master?urlpath=lab)
+[![Test notebooks](https://github.com/fastscape-lem/s2s-future-dragonstone/workflows/Test%20notebooks/badge.svg)](https://github.com/fastscape-lem/s2s-future-dragonstone/actions)
 
 # FastScape Demo
 
@@ -24,7 +24,7 @@ You can run the notebooks in your browser without installing anything thanks to
 "launch binder" badge above and it will launch remotely a new notebook server
 for you:
 
-- [Run on binder](https://mybinder.org/v2/gh/fastscape-lem/fastscape-demo/master?urlpath=lab)
+- [Run on binder](https://mybinder.org/v2/gh/fastscape-lem/s2s-future-dragonstone/master?urlpath=lab)
 
 This service is for demo purpose only, do not rely on it for doing more serious
 work.
@@ -41,7 +41,7 @@ of your platform's package managers.
 Run the command below to first pull the latest image:
 
 ```bash
-$ docker pull fastscape/fastscape-demo:latest
+$ docker pull fastscape/s2s-future-dragonstone:latest
 ```
 
 Then run the command below to start the Jupyterlab application from the Docker
@@ -49,7 +49,7 @@ container (replace `test-fastscape` by any other name you want to give to your
 local container):
 
 ```bash
-$ docker run -it --name test-fastscape -p 8888:8888 fastscape/fastscape-demo jupyter lab --ip 0.0.0.0
+$ docker run -it --name test-fastscape -p 8888:8888 fastscape/s2s-future-dragonstone jupyter lab --ip 0.0.0.0
 ```
 
 You can then enter in your browser the url and token provided to start using the
@@ -73,10 +73,10 @@ installed, you can install all the packages required to run the notebooks in a
 new conda environment using the following commands:
 
 ```bash
-$ git clone https://github.com/fastscape-lem/fastscape-demo
-$ cd fastscape-demo
+$ git clone https://github.com/fastscape-lem/s2s-future-dragonstone
+$ cd s2s-future-dragonstone
 $ conda env create -f environment.yml
-$ conda activate fastscape-demo
+$ conda activate s2s-future-dragonstone
 ```
 
 You also need to install a few Jupyterlab extensions with the following command
@@ -106,7 +106,7 @@ A few extra steps are required to prepare your contributions. You can first
 update the conda environment using the following command:
 
 ```bash
-$ conda env update -n fastscape-demo --file environment-dev.yml 
+$ conda env update -n s2s-future-dragonstone --file environment-dev.yml 
 ```
 
 This installs a few additional packages like

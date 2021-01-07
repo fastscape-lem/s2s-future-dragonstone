@@ -21,7 +21,7 @@ jobs:
           mamba-version: "*"
           channels: conda-forge,defaults
           channel-priority: true
-          activate-environment: fastscape-demo
+          activate-environment: s2s-future-dragonstone
           environment-file: environment.yml
       - name: Conda info
         shell: bash -l {0}

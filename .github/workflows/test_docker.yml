@@ -18,4 +18,4 @@ jobs:
       uses: jupyterhub/repo2docker-action@master
       with:
         NO_PUSH: 'true'
-        IMAGE_NAME: "fastscape-demo/repo2docker-test"
+        IMAGE_NAME: "s2s-future-dragonstone/repo2docker-test"
