@@ -1,0 +1,32 @@
+name: fastscape-demo
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - numpy
+  - pandas
+  - dask
+  - dask-labextension
+  - xarray
+  - xarray-simlab=0.4.1
+  - netcdf4
+  - fastscapelib-f2py=2.8.2
+  - ipyfastscape
+  - jupyter
+  - jupyterlab
+  - notebook
+  - ipykernel
+  - matplotlib-base
+  - graphviz
+  - python-graphviz
+  - numba
+  - ipywidgets
+  - ipygany
+  - hvplot
+  - datashader
+  - zarr
+  - tqdm
+  - nodejs
+  - pip
+  - pip:
+      - git+https://github.com/fastscape-lem/fastscape
