@@ -8,7 +8,6 @@ dependencies:
   - dask
   - dask-labextension
   - xarray
-  - xarray-simlab=0.4.1
   - netcdf4
   - fastscapelib-f2py=2.8.2
   - ipyfastscape
@@ -30,3 +29,4 @@ dependencies:
   - pip
   - pip:
       - git+https://github.com/fastscape-lem/fastscape
+      - git+https://github.com/benbovy/xarray-simlab

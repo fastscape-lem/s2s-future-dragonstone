@@ -1,13 +1,17 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/fastscape-lem/s2s-future-dragonstone/master?urlpath=lab)
 [![Test notebooks](https://github.com/fastscape-lem/s2s-future-dragonstone/workflows/Test%20notebooks/badge.svg)](https://github.com/fastscape-lem/s2s-future-dragonstone/actions)
 
-# FastScape Demo
+# S2S-Future DragonStone
 
 This repository contains a collection of [Jupyter](http://jupyter.org/)
 notebooks with examples of using the Fastscape software stack for landscape
 evolution modeling and topographic analysis.
 
-More information on this website: https://fastscape.org
+These notebooks were developed by Jean Braun in the framework of the first
+training program (called DragonStone) of the S2S-Future ITN (Innovative
+Training Network) in January 2021.
+
+More information concerning FastScape on this website: https://fastscape.org
 
 - [How to run the notebooks?](#how-to-run-the-notebooks)
     - [Run in the cloud (Binder)](#run-in-the-cloud-binder)
