@@ -28,5 +28,5 @@ dependencies:
   - nodejs
   - pip
   - pip:
-      - git+https://github.com/fastscape-lem/fastscape
       - git+https://github.com/benbovy/xarray-simlab
+      - git+https://github.com/fastscape-lem/fastscape
