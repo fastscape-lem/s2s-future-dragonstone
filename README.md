@@ -49,26 +49,56 @@ $ docker pull fastscape/s2s-future-dragonstone:latest
 ```
 
 Then run the command below to start the Jupyterlab application from the Docker
-container (replace `test-fastscape` by any other name you want to give to your
-local container):
+container. Replace `dragonstone` by any other name you want to give to your
+local container (optional). Also Replace `/path/to/local-notebook-folder` by the
+full path to the directory on your machine where you want to create/copy, edit and
+permanently store notebooks for this training course.
 
 ```bash
-$ docker run -it --name test-fastscape -p 8888:8888 fastscape/s2s-future-dragonstone jupyter lab --ip 0.0.0.0
+$ docker run \
+    -it \
+    --name dragonstone \
+    -p 8888:8888 \
+    -v /path/to/local-notebook-folder:/home/jovyan/my-local-folder \
+    fastscape/s2s-future-dragonstone \
+    jupyter lab --ip 0.0.0.0
 ```
 
 You can then enter in your browser the url and token provided to start using the
-application.
+Jupyterlab application.
 
-Check [Docker's documentation](https://docs.docker.com/) for additional run
-options, e.g., if you want to use the Jupyterlab application with notebooks or
-files on your local filesystem (i.e., not in the container).
+You may want to copy the `notebooks` folder in your local working folder mounted
+in the docker container as `my-local-folder`. Open a terminal in Jupyterlab and
+run the following command:
 
-When you are done you need to stop (and optionally remove) the container:
+```bash
+$ cp -R notebooks my-local-folder/
+```
+
+When you are done you can stop and remove the container:
 
 ``` bash
-$ docker stop test-fastscape
-$ docker rm test-fastscape
+$ docker stop dragonstone
+$ docker rm dragonstone
 ```
+
+#### Troubleshooting
+
+*The url I entered in my browser doesn't point to Jupyterlab*
+
+You may already have another application running on localhost using the port
+`8888`. Try another port when running the `docker run` command above, e.g.,
+using `-p 8889:8888`. You also need to change the port in the entered url
+accordingly (e.g., `localhost:8889`).
+
+*The url I entered in my browser gives a page asking for a token*
+
+Copy and paste the token given in the url. If the token is invalid, you may have
+another Jupyterlab application already running on your machine. Try using
+another port as described above.
+
+Check [Docker's documentation](https://docs.docker.com/) for additional command
+line help and options.
 
 ### Install and run locally (Conda)
 
