@@ -42,7 +42,8 @@ have Docker installed on your machine. It is available on all platforms
 Linux/Windows/Mac and it can be installed from the Docker website or using one
 of your platform's package managers.
 
-Run the command below to first pull the latest image:
+Run the command below in a terminal to first pull the latest image (note: the
+Docker application must be running, you might need to launch it first):
 
 ```bash
 $ docker pull fastscape/s2s-future-dragonstone:latest
